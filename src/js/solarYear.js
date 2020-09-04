@@ -28,7 +28,8 @@ export default class SolarYears {
    }
 
    randomNumber () {
-
+    let random = (Math.random() * 25) + 72;
+    this.randomAge = Math.round(10 * random)/10;
    }
 }
 
