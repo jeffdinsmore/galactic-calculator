@@ -35,8 +35,11 @@ describe('SolarYears', () => {
 
   test('should correctly return the random age between 72 and 97 minus the inputted age', () => {
     solarYears.solarYearsLeft(53);
-    // expect(solarYears.yearsLeft <= 44 && solarYears.yearsLeft >= 19).toBe(true);
     // expect(solarYears.mercury <= 44 && solarYears.yearsLeft >= 19).toBe(true);
-    expect(solarYears.yearsLeft[0] <= 44 && solarYears.yearsLeft >= 19).toBe(true);
+    expect(solarYears.yearsLeft[0] <= 44 && solarYears.yearsLeft[0] >= 19).toBe(true);
+  });
+
+  test('should correctly return the random age between 72 and 97 minus the inputted age and then divide by 0.24', () => {
+    expect(solarYears.yearsLeft[1] <= 183 && solarYears.yearsLeft[1] >= 79).toBe(true);
   });
 });
