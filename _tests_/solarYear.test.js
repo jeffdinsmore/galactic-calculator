@@ -15,6 +15,6 @@ describe('SolarYears', () => {
 
   test('should correctly return inputted Earth years', () => {
     solarYears.earthYear(10);
-    expect(solarYears.earth).toEqual(11);
+    expect(solarYears.earth).toEqual(10);
   });
 });
