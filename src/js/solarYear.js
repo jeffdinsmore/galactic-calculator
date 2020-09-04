@@ -17,6 +17,10 @@ export default class SolarYears {
   earthYear (age) {
    this.earth = age;
   }
+
+  marsYear (age) {
+    
+   }
 }
 
 
