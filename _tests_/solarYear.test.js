@@ -22,4 +22,9 @@ describe('SolarYears', () => {
     solarYears.marsYear(10);
     expect(solarYears.mars).toEqual(10/1.88);
   });
+
+  test('should correctly return the solar years of Jupiter at 11.86 Earth Years', () => {
+    solarYears.jupiterYear(10);
+    expect(solarYears.jupiter).toEqual(10);
+  });
 });
