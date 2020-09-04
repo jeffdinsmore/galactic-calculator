@@ -13,6 +13,10 @@ export default class SolarYears {
   venusYear (age) {
     this.venus = age / 0.62;
   }
+
+  earthYear (age) {
+   
+  }
 }
 
 

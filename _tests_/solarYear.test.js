@@ -12,4 +12,9 @@ describe('SolarYears', () => {
     solarYears.venusYear(10);
     expect(solarYears.venus).toEqual(10/.62);
   });
+
+  test('should correctly return inputted Earth years', () => {
+    solarYears.earthYear(10);
+    expect(solarYears.earth).toEqual(11);
+  });
 });
