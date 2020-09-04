@@ -1,3 +1,6 @@
 header, footer {
   height: 60px;
 }
+.form-control {
+  width: 200px;
+}

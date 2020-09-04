@@ -6,7 +6,14 @@ import SolarYears from './../src/js/solarYear.js';
 
 
 $(document).ready(function() {
-  
-  
-  event.preventDefault();
+  $("form").submit(function(event) {
+    event.preventDefault();
+    let solarYears = new SolarYears();
+    const inputtedAge = $("input#age").val();
+    console.log(inputtedAge)
+    solarYears();
+    
+    $("#output").text(inputtedAge);
+    
+  });
 });
