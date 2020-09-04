@@ -20,7 +20,6 @@ export default class SolarYears {
   randomNumber () {
     let random = (Math.random() * 25) + 72;
     this.randomAge = Math.floor(10 * random)/10;
-
   }
 
   solarYearsLeft (age) { 
@@ -39,20 +38,6 @@ export default class SolarYears {
       });
     } 
   }
-  //  solarYearsLeft (age) {
-    
-    // this.earthLeft = this.yearsLeft[0];
-    // this.yearsLeft.push(math.round(10 * (this.earthLeft / 0.24))/10);
-    // this.yearsLeft.push(math.round(10 * (this.earthLeft / 0.62))/10);
-    // this.yearsLeft.push(math.round(10 * (this.earthLeft / 1.88))/10);
-    // this.yearsLeft.push(math.round(10 * (this.earthLeft / 11.86))/10);
-    // this.yearsLeft = this.randomAge - age;
-    // mercuryLeft = Math.round(10 * (this.yearsLeft / 0.24) / 10);
-    // venusLeft = Math.round(10 * (this.yearsLeft / 0.62) / 10);
-    // marsLeft = Math.round(10 * (this.yearsLeft / 1.88) / 10);
-    // jupiterLeft = jupiterYear(this.yearsLeft);
-    
-  //  }
 }
 
 
