@@ -20,6 +20,6 @@ describe('SolarYears', () => {
 
   test('should correctly return the solar years of Mars at 1.88 Earth Years', () => {
     solarYears.marsYear(10);
-    expect(solarYears.mars).toEqual(10);
+    expect(solarYears.mars).toEqual(10/1.88);
   });
 });
