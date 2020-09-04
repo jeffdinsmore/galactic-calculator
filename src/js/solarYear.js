@@ -11,7 +11,7 @@ export default class SolarYears {
     this.mercury = age / 0.24;
   }
   venusYear (age) {
-    
+    this.venus = age / 0.62;
   }
 }
 

@@ -10,6 +10,6 @@ describe('SolarYears', () => {
 
   test('should correctly return the solar years of Venus at 0.62 Earth Years', () => {
     solarYears.venusYear(10);
-    expect(solarYears.venus).toEqual(10/.62);
+    expect(solarYears.venus).toEqual(16.2);
   });
 });
