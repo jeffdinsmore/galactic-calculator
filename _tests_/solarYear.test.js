@@ -32,4 +32,9 @@ describe('SolarYears', () => {
     solarYears.randomNumber();
     expect(solarYears.randomAge <= 97 && solarYears.randomAge >= 72).toBe(true);
   });
+
+  test('should correctly return the random age between 72 and 97 minus the inputted age', () => {
+    solarYears.solarYearsLeft();
+    expect(solarYears.yearsLeft <= 97 && solarYears.yearsLeft >= 72).toBe(true);
+  });
 });
