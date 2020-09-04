@@ -1,5 +1,5 @@
 {
-  "name": "shape-tracker",
+  "name": "galactic-calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeffdinsmore/shape-tracker.git"
+    "url": "git+https://github.com/jeffdinsmore/galactic-calculator.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jeffdinsmore/shape-tracker/issues"
+    "url": "https://github.com/jeffdinsmore/galactic-calculator/issues"
   },
-  "homepage": "https://github.com/jeffdinsmore/shape-tracker#readme",
+  "homepage": "https://github.com/jeffdinsmore/galactic-calculator#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
