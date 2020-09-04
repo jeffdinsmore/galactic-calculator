@@ -35,7 +35,7 @@ export default class SolarYears {
    }
 
    solarYearsLeft (age) {
-    
+    this.yearsLeft = this.randomAge - age;
    }
 }
 
