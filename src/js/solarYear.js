@@ -27,7 +27,7 @@ export default class SolarYears {
      this.yearsLeft = [];
      this.yearsLeft.push(this.randomAge - age);
      this.earthLeft = this.yearsLeft[0];
-      this.yearsLeft.push(this.earthLeft/0.24);
+    //  this.yearsLeft.push(this.earthLeft/0.24);
     //  this.yearsLeft.push(this.earthLeft/0.62);
     //  this.yearsLeft.push(this.earthLeft/1.88);
     //  this.yearsLeft.push(this.earthLeft/11.86);
