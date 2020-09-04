@@ -30,6 +30,12 @@ module.exports = {
         ]
       },
       {
+        test: /\.(png|jpeg|jpg|gif)$/,
+          use: [
+            'file-loader',
+          ],
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "eslint-loader"

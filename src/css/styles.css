@@ -4,3 +4,15 @@ header, footer {
 .form-control {
   width: 200px;
 }
+
+span {
+  font-weight: bold;
+}
+
+button {
+  margin: 20px 0px 20px 0px;
+}
+
+img {
+  display: none;
+}

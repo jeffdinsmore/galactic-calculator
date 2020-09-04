@@ -13,11 +13,6 @@ describe('SolarYears', () => {
     expect(solarYears.venus).toEqual(16.1);
   });
 
-  test('should correctly return inputted Earth years', () => {
-    solarYears.solarYearEquation(10);
-    expect(solarYears.earth).toEqual(10);
-  });
-
   test('should correctly return the solar years of Mars at 1.88 Earth Years', () => {
     solarYears.solarYearEquation(10);
     expect(solarYears.mars).toEqual(5.3);
@@ -58,7 +53,5 @@ describe('SolarYears', () => {
   test('should correctly return inputted age minus the random age', () => {
     solarYears.solarYearsLeft(98);
     expect(solarYears.yearsPassed <= 26 && solarYears.yearsPassed >= 1).toBe(true);
-    
   });
-
 });
