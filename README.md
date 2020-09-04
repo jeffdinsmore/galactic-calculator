@@ -26,12 +26,16 @@ Spec 4: The program returns an inputted age and calculates a new age in Jupiter 
 * Input: "10"
 * Output: "0.84"
 
-Spec 5: The program returns an inputted age and calculates a new age random between 72 and 97 Earth years and returns this years in solar years of all the planets listed in the previous tests.
+Spec 5: The program returns an inputted age and calculates a new age random between 72 and 97 Earth years.
 * Input: "53"
-* Output1: "Expected life expectancy on all planets is 342.2, 133.9, 82.4, 43.8, 6.94 years respectively."
-* Output2: "You have 122.1, 47.8, 29.4, 15.6, and 2.48 years to live on each planet respectively"
+* Output: "Expected life expectancy on all planets is 342.2, 133.9, 82.4, 43.8, 6.94 years respectively."
 
-Spec 6: If a user has already surpassed the average life expectancy, the program returns the number of years they have already lived past the life expectancy for each planet respectively.
+
+Spec 6: The program takes inputted age and subtracts from the the random age from spec 5 of 82.4 years and returns in solar years of all the planets listed in the previous tests.
+* Input: "53"
+* Output: "You have 122.1, 47.8, 29.4, 15.6, and 2.48 years to live on each planet respectively"
+
+Spec 7: If a user has already surpassed the average life expectancy, the program returns the number of years they have already lived past the life expectancy for each planet respectively.
 * Input: "92.4"
 * Output: "You have already lived passed the life expectancy of 82.4 years. You surpassed the life expectancy by 41.5, 16.2, 10, 5.3, and 0.84 years respectively."
 
