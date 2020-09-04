@@ -19,7 +19,7 @@ export default class SolarYears {
   }
 
   marsYear (age) {
-    
+    this.mars = age / 1.88;
    }
 }
 
