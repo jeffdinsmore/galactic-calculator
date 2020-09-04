@@ -33,7 +33,7 @@ Spec 5: The program returns an inputted age and calculates a new age random betw
 
 Spec 6: The program takes inputted age and subtracts from the the random age from spec 5 of 82.4 years and returns in solar years of all the planets listed in the previous tests.
 * Input: "53"
-* Output: "You have 122.1, 47.8, 29.4, 15.6, and 2.48 years to live on each planet respectively"
+* Output: "You have 29.4, 122.1, 47.8, 15.6, and 2.48 years to live on each planet respectively"
 
 Spec 7: If a user has already surpassed the average life expectancy, the program returns the number of years they have already lived past the life expectancy for each planet respectively.
 * Input: "92.4"
