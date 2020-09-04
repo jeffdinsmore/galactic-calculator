@@ -37,6 +37,6 @@ describe('SolarYears', () => {
     solarYears.solarYearsLeft(53);
     // expect(solarYears.yearsLeft <= 44 && solarYears.yearsLeft >= 19).toBe(true);
     // expect(solarYears.mercury <= 44 && solarYears.yearsLeft >= 19).toBe(true);
-    expect(solarYears.yearsLeft[0] <= 44 && solarYears.yearsLeft >= 19).toBe(false);
+    expect(solarYears.yearsLeft[0] <= 44 && solarYears.yearsLeft >= 19).toBe(true);
   });
 });
