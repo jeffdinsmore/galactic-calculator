@@ -23,7 +23,7 @@ export default class SolarYears {
    }
 
    jupiterYear (age) {
-    
+    this.jupiter = age / 11.86;
    }
 }
 
