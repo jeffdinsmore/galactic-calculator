@@ -27,4 +27,9 @@ describe('SolarYears', () => {
     solarYears.jupiterYear(10);
     expect(solarYears.jupiter).toEqual(10/11.86);
   });
+
+  test('should correctly return a random age between 72 and 97', () => {
+    solarYears.randomNumber();
+    expect(solarYears.randomAge <= 97 && solarYears.randomAge >= 72).toBe(true);
+  });
 });

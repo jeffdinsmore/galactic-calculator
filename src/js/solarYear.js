@@ -1,10 +1,11 @@
 export default class SolarYears {
-  constructor(mercury, venus, earth, mars, jupiter) {
+  constructor(mercury, venus, earth, mars, jupiter, randomAge) {
     this.mercury = mercury;
     this.venus = venus;
     this.earth = earth;
     this.mars = mars;
     this.jupiter = jupiter;
+    this.randomAge = randomAge;
   }
 
   mercuryYear (age) {
@@ -24,6 +25,10 @@ export default class SolarYears {
 
    jupiterYear (age) {
     this.jupiter = age / 11.86;
+   }
+
+   randomNumber () {
+
    }
 }
 
