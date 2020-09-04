@@ -34,8 +34,13 @@ export default class SolarYears {
 
    }
 
-   solarYearsLeft (age) {
+   solarYearsLeft (age, mercuryLeft, venusLeft, marsLeft, jupiterLeft) {
     this.yearsLeft = this.randomAge - age;
+    mercuryLeft = Math.round(10 * (this.yearsLeft / 0.24) / 10);
+    venusLeft = Math.round(10 * (this.yearsLeft / 0.62) / 10);
+    marsLeft = Math.round(10 * (this.yearsLeft / 1.88) / 10);
+    jupiterLeft = jupiterYear(this.yearsLeft);
+    
    }
 }
 
