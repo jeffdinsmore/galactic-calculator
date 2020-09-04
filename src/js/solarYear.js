@@ -17,25 +17,28 @@ export default class SolarYears {
     this.jupiter = Math.floor(10* age / 11.86)/10;
   }
   
-   randomNumber () {
+  randomNumber () {
     let random = (Math.random() * 25) + 72;
     this.randomAge = Math.floor(10 * random)/10;
 
-   }
+  }
 
-   solarYearsLeft (age) {
-     this.yearsLeft = [];
-     this.yearsLeft.push(this.randomAge - age);
-     this.earthLeft = this.yearsLeft[0];
-     this.yearsLeft.push(this.earthLeft/0.24);
-     this.yearsLeft.push(this.earthLeft/0.62);
-     this.yearsLeft.push(this.earthLeft/1.88);
-     this.yearsLeft.push(this.earthLeft/11.86);
-     this.yearsLeft = this.yearsLeft.map(function(element) {
-       return Number(element.toFixed(1));
-     });
-   }
-
+  solarYearsLeft (age) { 
+    // if (age > this.randomAge) {
+    //   this.yearsPassed = age - this.randomAge
+    // } else {
+      this.yearsLeft = [];
+      this.yearsLeft.push(this.randomAge - age);
+      this.earthLeft = this.yearsLeft[0];
+      this.yearsLeft.push(this.earthLeft/0.24);
+      this.yearsLeft.push(this.earthLeft/0.62);
+      this.yearsLeft.push(this.earthLeft/1.88);
+      this.yearsLeft.push(this.earthLeft/11.86);
+      this.yearsLeft = this.yearsLeft.map(function(element) {
+        return Number(element.toFixed(1));
+      });
+    // } 
+  }
   //  solarYearsLeft (age) {
     
     // this.earthLeft = this.yearsLeft[0];
