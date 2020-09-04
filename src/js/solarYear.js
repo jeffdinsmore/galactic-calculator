@@ -6,6 +6,10 @@ export default class SolarYears {
     this.mars = mars;
     this.jupiter = jupiter;
   }
+
+  mercuryYear (age) {
+    this.mercury = age / 0.24;
+  }
 }
 
 
