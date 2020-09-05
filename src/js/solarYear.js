@@ -41,7 +41,7 @@ export default class SolarYears {
       this.yearsPassed.push(this.earthPassed/0.24);
       this.yearsPassed.push(this.earthPassed/0.62);
       this.yearsPassed.push(this.earthPassed/1.88);
-      // this.yearsPassed.push(this.earthPassed/11.86);
+      this.yearsPassed.push(this.earthPassed/11.86);
       this.yearsPassed = this.yearsPassed.map(function(element) {
         return Number(element.toFixed(1));
       });
