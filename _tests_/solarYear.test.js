@@ -74,10 +74,15 @@ describe('SolarYears', () => {
     expect(solarYears.yearsPassed[4] <= 2 && solarYears.yearsPassed[4] >= 0).toBe(true);
   });
 
-  test('should correctly return life expectancy by adding mercury age plus mercury years left', () => {
+  test('should correctly return life expectancy by adding Mercury age plus Mercury years left', () => {
     solarYears.solarYearEquation(50);
     solarYears.solarYearsLeft(50);
     solarYears.lifeExpectancy();
     expect(solarYears.mercuryLife <= 404 && solarYears.mercuryLife >= 300).toBe(true);
+  });
+
+  test('should correctly return life expectancy by adding Venus age plus mercury years left', () => {
+    solarYears.lifeExpectancy();
+    expect(solarYears.venusLife <= 156 && solarYears.venusLife >= 116).toBe(true);
   });
 });
