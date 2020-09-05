@@ -38,7 +38,7 @@ export default class SolarYears {
       this.yearsPassed = [];
       this.yearsPassed.push(age - this.randomAge);
       this.earthPassed = this.yearsPassed[0];
-      // this.yearsPassed.push(this.earthPassed/0.24);
+      this.yearsPassed.push(this.earthPassed/0.24);
       // this.yearsPassed.push(this.earthPassed/0.62);
       // this.yearsPassed.push(this.earthPassed/1.88);
       // this.yearsPassed.push(this.earthPassed/11.86);
