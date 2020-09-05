@@ -17,14 +17,24 @@ $(document).ready(function() {
     solarYears.randomNumber();
     $("#outputYear").text(solarYears.randomAge + " Earth years");
     solarYears.solarYearsLeft(inputtedAge);
-    $("#mercuryLife").text(solarYears.randomAge[1] + " years");
-    $("#venusLife").text(solarYears.randomAge[2] + " years");
-    $("#marsLife").text(solarYears.randomAge[3] + " years");
-    $("#jupiterLife").text(solarYears.randomAge[4] + " years");
-    $("#mercuryLeft").text(solarYears.yearsLeft[1] + " years");
-    $("#venusLeft").text(solarYears.yearsLeft[2] + " years");
-    $("#marsLeft").text(solarYears.yearsLeft[3] + " years");
-    $("#jupiterLeft").text(solarYears.yearsLeft[4] + " years");
+    // $("#mercuryLife").text(solarYears.randomAge[1] + " years");
+    // $("#venusLife").text(solarYears.randomAge[2] + " years");
+    // $("#marsLife").text(solarYears.randomAge[3] + " years");
+    // $("#jupiterLife").text(solarYears.randomAge[4] + " years");
+    console.log(inputtedAge)
+    let randomAge = solarYears.randomAge;
+    console.log(randomAge)
+    if (inputtedAge > solarYears.randomAge) {
+      $("#mercuryLeft").text("You have lived passed by: " + solarYears.yearsPassed[1] + " years");
+      $("#venusLeft").text("You have lived passed by: " + solarYears.yearsPassed[2] + " years");
+      $("#marsLeft").text("You have lived passed by: " + solarYears.yearsPassed[3] + " years");
+      $("#jupiterLeft").text("You have lived passed by: " + solarYears.yearsPassed[4] + " years");
+    } else {
+      $("#mercuryLeft").text("Years left to live: " + solarYears.yearsLeft[1] + " years");
+      $("#venusLeft").text("Years left to live: " + solarYears.yearsLeft[2] + " years");
+      $("#marsLeft").text("Years left to live: " + solarYears.yearsLeft[3] + " years");
+      $("#jupiterLeft").text("Years left to live: " + solarYears.yearsLeft[4] + " years");
+    }
     console.log(solarYears.yearsLeft)
     console.log(solarYears.yearsPassed)
   });

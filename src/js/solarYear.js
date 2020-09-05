@@ -32,7 +32,6 @@ export default class SolarYears {
         return Number(element.toFixed(1));
       });
     } 
-  
 
   solarYearsPassed (age) { 
       this.yearsPassed = [];
