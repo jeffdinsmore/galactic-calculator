@@ -48,7 +48,7 @@ export default class SolarYears {
     } 
 
   lifeExpectancy() {
-    // this.mercuryLife = (this.mercury + this.yearsLeft[1]).toFixed(1);
+    this.mercuryLife = (this.mercury + this.yearsLeft[1]).toFixed(1);
     // this.venusLife = (this.venus + this.yearsLeft[2]).toFixed(1);
     // this.marsLife = (this.mars + this.yearsLeft[3]).toFixed(1);
     // this.jupiterLife = (this.jupiter + this.yearsLeft[4]).toFixed(1);
