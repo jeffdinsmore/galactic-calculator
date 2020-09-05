@@ -22,3 +22,9 @@ img {
 h1 {
   margin-bottom: 30px;
 }
+
+.labelAge {
+  color: darkmagenta;
+  font-weight: bold;
+  font-size: 22px;
+}
