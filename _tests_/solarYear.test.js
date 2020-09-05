@@ -69,4 +69,9 @@ describe('SolarYears', () => {
     solarYears.solarYearsPassed(98);
     expect(solarYears.yearsPassed[3] <= 13 && solarYears.yearsPassed[3] >= 0).toBe(true);
   });
+
+  test('should correctly return inputted age minus the random age divided by 11.86 for Jupiter', () => {
+    solarYears.solarYearsPassed(98);
+    expect(solarYears.yearsPassed[4] <= 2 && solarYears.yearsPassed[4] >= 0).toBe(true);
+  });
 });
