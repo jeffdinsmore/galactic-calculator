@@ -34,19 +34,19 @@ describe('SolarYears', () => {
   });
 
   test('should correctly return the random age between 72 and 97 minus the inputted age and then divide by 0.24', () => {
-    expect(solarYears.yearsLeft[1] <= 183 && solarYears.yearsLeft[1] >= 79).toBe(true);
+    expect(solarYears.yearsLeft[1] <= ((97-53)/.24) && solarYears.yearsLeft[1] >= ((72-53)/.24)).toBe(true);
   });
 
   test('should correctly return the random age between 72 and 97 minus the inputted age and then divide by 0.62', () => {
-    expect(solarYears.yearsLeft[2] <= 70 && solarYears.yearsLeft[2] >= 30).toBe(true);
+    expect(solarYears.yearsLeft[2] <= ((97-53)/.62) && solarYears.yearsLeft[2] >= ((72-53)/.62)).toBe(true);
   });
 
   test('should correctly return the random age between 72 and 97 minus the inputted age and then divide by 1.88', () => {
-    expect(solarYears.yearsLeft[3] <= 23 && solarYears.yearsLeft[3] >= 10).toBe(true);
+    expect(solarYears.yearsLeft[3] <= ((97-53)/1.88) && solarYears.yearsLeft[3] >= ((72-53)/1.88)).toBe(true);
   });
   
   test('should correctly return the random age between 72 and 97 minus the inputted age and then divide by 11.86', () => {
-    expect(solarYears.yearsLeft[4] <= 4 && solarYears.yearsLeft[4] >= 1).toBe(true);
+    expect(solarYears.yearsLeft[4] <= ((97-53)/11.86) && solarYears.yearsLeft[4] >= ((72-53)/11.86)).toBe(true);
   });
 
   test('should correctly return inputted age minus the random age for Earth', () => {
@@ -56,12 +56,12 @@ describe('SolarYears', () => {
 
   test('should correctly return inputted age minus the random age divided by 0.24 for Mercury', () => {
     solarYears.solarYearsPassed(98);
-    expect(solarYears.yearsPassed[1] <= 108 && solarYears.yearsPassed[1] >= 4).toBe(true);
+    expect(solarYears.yearsPassed[1] <= ((98-72)/.24) && solarYears.yearsPassed[1] >= ((98-97)/.24)).toBe(true);
   });
 
-  test('should correctly return inputted age minus the random age divided by 0.68 for Venus', () => {
+  test('should correctly return inputted age minus the random age divided by 0.62 for Venus', () => {
     solarYears.solarYearsPassed(98);
-    expect(solarYears.yearsPassed[2] <= ((98-72)/.62) && solarYears.yearsPassed[2] >= 1).toBe(true);
+    expect(solarYears.yearsPassed[2] <= ((98-72)/.62) && solarYears.yearsPassed[2] >= ((98-97)/.62)).toBe(true);
   });
 
   test('should correctly return inputted age minus the random age divided by 1.88 for Mars', () => {
