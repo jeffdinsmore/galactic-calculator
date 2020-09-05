@@ -50,13 +50,18 @@ describe('SolarYears', () => {
     expect(solarYears.yearsLeft[4] <= 4 && solarYears.yearsLeft[4] >= 1).toBe(true);
   });
 
-  test('should correctly return inputted age minus the random age', () => {
+  test('should correctly return inputted age minus the random age for Earth', () => {
     solarYears.solarYearsPassed(98);
     expect(solarYears.yearsPassed[0] <= 26 && solarYears.yearsPassed[0] >= 1).toBe(true);
   });
 
-  test('should correctly return inputted age minus the random age', () => {
+  test('should correctly return inputted age minus the random age divided by 0.24 for Mercury', () => {
     solarYears.solarYearsPassed(98);
-    expect(solarYears.yearsPassed[1] <= 108 && solarYears.yearsPassed[0] >= 4).toBe(true);
+    expect(solarYears.yearsPassed[1] <= 108 && solarYears.yearsPassed[1] >= 4).toBe(true);
+  });
+
+  test('should correctly return inputted age minus the random age divided by 0.68 for Venus', () => {
+    solarYears.solarYearsPassed(98);
+    expect(solarYears.yearsPassed[2] <= 41 && solarYears.yearsPassed[2] >= 1).toBe(true);
   });
 });
