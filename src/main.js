@@ -15,6 +15,7 @@ $(document).ready(function() {
     $("#mars").text(solarYears.mars + " years");
     $("#jupiter").text(solarYears.jupiter + " years");
     solarYears.randomNumber();
+    $("#outputYear").text(solarYears.randomAge + " Earth years");
     solarYears.solarYearsLeft(inputtedAge);
     $("#mercuryLife").text(solarYears.randomAge[1] + " years");
     $("#venusLife").text(solarYears.randomAge[2] + " years");
@@ -25,6 +26,7 @@ $(document).ready(function() {
     $("#marsLeft").text(solarYears.yearsLeft[3] + " years");
     $("#jupiterLeft").text(solarYears.yearsLeft[4] + " years");
     console.log(solarYears.yearsLeft)
+    console.log(solarYears.randomAge)
   });
 });
 

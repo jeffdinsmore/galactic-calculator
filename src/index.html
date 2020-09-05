@@ -10,11 +10,22 @@
 <body>
   <header></header>
   <div class="container">
-    <h1>TITLE HERE</h1>
+    <h1>Solar Galactic Age Calculator</h1>
     <form>
-      <label for="age">Enter Your Age</label>
-      <input type="number" id="age" class="form-control">
-      <button id="submit" class="btn btn-success">Age in Solar Years</button>
+      <div class="row">
+        <div class="col-lg-6">
+          <label for="age">Enter Your Age</label>
+          <input type="number" id="age" class="form-control">
+          <button id="submit" class="btn btn-success">Age in Solar Years</button>
+        </div>
+        <div class="col-lg-4">
+          <div id="outputExpectancy">
+            <h3>Your life expectancy is...</h3>
+            <h3><span id="outputYear"></span></h3>
+          </div>
+        </div>
+      </div>
+      
     </form>
     <div id="output">
       <h3>Your solar ages for...</h3>
