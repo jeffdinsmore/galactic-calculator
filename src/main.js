@@ -26,7 +26,7 @@ $(document).ready(function() {
     $("#marsLeft").text(solarYears.yearsLeft[3] + " years");
     $("#jupiterLeft").text(solarYears.yearsLeft[4] + " years");
     console.log(solarYears.yearsLeft)
-    console.log(solarYears.randomAge)
+    console.log(solarYears.yearsPassed)
   });
 });
 

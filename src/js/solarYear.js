@@ -21,9 +21,6 @@ export default class SolarYears {
   }
 
   solarYearsLeft (age) { 
-    if (age > this.randomAge) {
-      this.yearsPassed = age - this.randomAge
-    } else {
       this.yearsLeft = [];
       this.yearsLeft.push(this.randomAge - age);
       this.earthLeft = this.yearsLeft[0];
@@ -35,7 +32,25 @@ export default class SolarYears {
         return Number(element.toFixed(1));
       });
     } 
+  
+
+  solarYearsPassed (age) { 
+      this.yearsPassed = [];
+      this.yearsPassed.push(age - this.randomAge);
+      this.earthPassed = this.yearsPassed[0];
+      this.yearsPassed.push(this.earthPassed/0.24);
+      this.yearsPassed.push(this.earthPassed/0.62);
+      this.yearsPassed.push(this.earthPassed/1.88);
+      this.yearsPassed.push(this.earthPassed/11.86);
+      this.yearsPassed = this.yearsPassed.map(function(element) {
+        return Number(element.toFixed(1));
+      });
+    } 
   }
-}
+
+//   lifeExpectancy() {
+
+//   }
+// }
 
 

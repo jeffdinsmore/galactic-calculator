@@ -51,7 +51,7 @@ describe('SolarYears', () => {
   });
 
   test('should correctly return inputted age minus the random age', () => {
-    solarYears.solarYearsLeft(98);
-    expect(solarYears.yearsPassed <= 26 && solarYears.yearsPassed >= 1).toBe(true);
+    solarYears.solarYearsPassed(98);
+    expect(solarYears.yearsPassed[0] <= 26 && solarYears.yearsPassed[0] >= 1).toBe(false);
   });
 });
