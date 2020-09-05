@@ -61,34 +61,34 @@ describe('SolarYears', () => {
 
   test('should correctly return inputted age minus the random age divided by 0.68 for Venus', () => {
     solarYears.solarYearsPassed(98);
-    expect(solarYears.yearsPassed[2] <= 41 && solarYears.yearsPassed[2] >= 1).toBe(true);
+    expect(solarYears.yearsPassed[2] <= ((98-72)/.62) && solarYears.yearsPassed[2] >= 1).toBe(true);
   });
 
   test('should correctly return inputted age minus the random age divided by 1.88 for Mars', () => {
     solarYears.solarYearsPassed(98);
-    expect(solarYears.yearsPassed[3] <= 14 && solarYears.yearsPassed[3] >= 0).toBe(true);
+    expect(solarYears.yearsPassed[3] <= ((98-72)/1.88) && solarYears.yearsPassed[3] >= ((98-97)/1.88)).toBe(true);
   });
 
   test('should correctly return inputted age minus the random age divided by 11.86 for Jupiter', () => {
     solarYears.solarYearsPassed(98);
-    expect(solarYears.yearsPassed[4] <= 3 && solarYears.yearsPassed[4] >= 0).toBe(true);
+    expect(solarYears.yearsPassed[4] <= ((98-72)/11.86) && solarYears.yearsPassed[4] >= ((98-97)/11.86)).toBe(true);
   });
 
   test('should correctly return life expectancy by adding Mercury age plus Mercury years left', () => {
     solarYears.solarYearEquation(50);
     solarYears.solarYearsLeft(50);
     solarYears.lifeExpectancy();
-    expect(solarYears.mercuryLife <= 404 && solarYears.mercuryLife >= 300).toBe(true);
+    expect(solarYears.mercuryLife <= (97/.24) && solarYears.mercuryLife >= (72/.24)).toBe(true);
   });
 
   test('should correctly return life expectancy by adding Venus age plus mercury years left', () => {
     solarYears.lifeExpectancy();
-    expect(solarYears.venusLife <= 156 && solarYears.venusLife >= 116).toBe(true);
+    expect(solarYears.venusLife <= (97/.62) && solarYears.venusLife >= (72/.62)).toBe(true);
   });
 
   test('should correctly return life expectancy by adding Venus age plus mercury years left', () => {
     solarYears.lifeExpectancy();
-    expect(solarYears.marsLife <= 52 && solarYears.marsLife >= 38).toBe(true);
+    expect(solarYears.marsLife <= (97/1.88) && solarYears.marsLife >= (72/1.88)).toBe(true);
   });
 
   test('should correctly return life expectancy by adding Venus age plus mercury years left', () => {
