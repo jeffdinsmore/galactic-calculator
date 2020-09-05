@@ -64,4 +64,9 @@ describe('SolarYears', () => {
     solarYears.solarYearsPassed(98);
     expect(solarYears.yearsPassed[2] <= 41 && solarYears.yearsPassed[2] >= 1).toBe(true);
   });
+
+  test('should correctly return inputted age minus the random age divided by 1.88 for Mars', () => {
+    solarYears.solarYearsPassed(98);
+    expect(solarYears.yearsPassed[3] <= 13 && solarYears.yearsPassed[3] >= 0).toBe(true);
+  });
 });
