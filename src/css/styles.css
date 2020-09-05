@@ -12,3 +12,9 @@ button {
 img {
   display: none;
 }
+
+#row2 {
+  background-color:#CADBF9;
+  width: 85%;
+  padding: 10px 0px 10px 0px
+}

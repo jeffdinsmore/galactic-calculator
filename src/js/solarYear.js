@@ -1,11 +1,12 @@
 export default class SolarYears {
-  constructor(mercury, venus, mars, jupiter, randomAge, yearsLeft) {
+  constructor(mercury, venus, mars, jupiter, randomAge, yearsLeft, yearsPassed) {
     this.mercury = mercury;
     this.venus = venus;
     this.mars = mars;
     this.jupiter = jupiter;
     this.randomAge = randomAge;
     this.yearsLeft = yearsLeft;
+    this.yearsPassed = yearsPassed;
   }
 
   solarYearEquation (age) {
@@ -45,11 +46,13 @@ export default class SolarYears {
         return Number(element.toFixed(1));
       });
     } 
+
+  lifeExpectancy() {
+    // this.mercuryLife = (this.mercury + this.yearsLeft[1]).toFixed(1);
+    // this.venusLife = (this.venus + this.yearsLeft[2]).toFixed(1);
+    // this.marsLife = (this.mars + this.yearsLeft[3]).toFixed(1);
+    // this.jupiterLife = (this.jupiter + this.yearsLeft[4]).toFixed(1);
   }
-
-//   lifeExpectancy() {
-
-//   }
-// }
+}
 
 

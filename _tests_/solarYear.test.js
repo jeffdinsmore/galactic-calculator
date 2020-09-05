@@ -30,7 +30,6 @@ describe('SolarYears', () => {
 
   test('should correctly return the random age between 72 and 97 minus the inputted age', () => {
     solarYears.solarYearsLeft(53);
-    // expect(solarYears.mercury <= 44 && solarYears.yearsLeft >= 19).toBe(true);
     expect(solarYears.yearsLeft[0] <= 44 && solarYears.yearsLeft[0] >= 19).toBe(true);
   });
 
@@ -73,5 +72,12 @@ describe('SolarYears', () => {
   test('should correctly return inputted age minus the random age divided by 11.86 for Jupiter', () => {
     solarYears.solarYearsPassed(98);
     expect(solarYears.yearsPassed[4] <= 2 && solarYears.yearsPassed[4] >= 0).toBe(true);
+  });
+
+  test('should correctly return life expectancy by adding mercury age plus mercury years left', () => {
+    solarYears.solarYearEquation(50);
+    solarYears.solarYearsLeft(50);
+    solarYears.lifeExpectancy();
+    expect(solarYears.mercuryLife <= 404 && solarYears.mercuryLife >= 300).toBe(true);
   });
 });
