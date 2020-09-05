@@ -14,27 +14,31 @@ $(document).ready(function() {
     $("#venus").text(solarYears.venus + " years");
     $("#mars").text(solarYears.mars + " years");
     $("#jupiter").text(solarYears.jupiter + " years");
+    
     solarYears.randomNumber();
-    $("#outputYear").html("Your life expectancy is..." + "<br>" + solarYears.randomAge + " Earth years");
+    $("#outputYear").html("Your life expectancy is..." + "<br><em><strong>" + solarYears.randomAge + " Earth years</em></strong");
+    
     solarYears.solarYearsLeft(inputtedAge);
     solarYears.lifeExpectancy();
-    console.log(solarYears.mercuryLife);
     $("#mercuryLife").text(solarYears.mercuryLife + " years");
     $("#venusLife").text(solarYears.venusLife + " years");
     $("#marsLife").text(solarYears.marsLife + " years");
     $("#jupiterLife").text(solarYears.jupiterLife + " years");
+    
     solarYears.solarYearsPassed(inputtedAge);
     if (inputtedAge > solarYears.randomAge) {
-      $("#outputYear").html("Your life expectancy was..." + "<br>" + solarYears.randomAge + " Earth years");
-      $("#mercuryLeft").text("Years passed expectancy: " + solarYears.yearsPassed[1] + " years");
-      $("#venusLeft").text("Years passed expectancy: " + solarYears.yearsPassed[2] + " years");
-      $("#marsLeft").text("Years passed expectancy: " + solarYears.yearsPassed[3] + " years");
-      $("#jupiterLeft").text("Years passed expectancy: " + solarYears.yearsPassed[4] + " years");
+      $("#outputYear").html("Your life expectancy was..." + "<br><strong><em>" + solarYears.randomAge + " Earth years</em></strong>");
+      $("#earthLeft").text("You have outlived most people by " + solarYears.yearsPassed[0] + " years");
+      $("#mercuryLeft").html("Years passed expectancy: " + "<strong><em>" + solarYears.yearsPassed[1] + " years</strong></em>");
+      $("#venusLeft").html("Years passed expectancy: " + "<strong><em>" + solarYears.yearsPassed[2] + " years</strong></em>");
+      $("#marsLeft").html("Years passed expectancy: " + "<strong><em>" + solarYears.yearsPassed[3] + " years</strong></em>");
+      $("#jupiterLeft").html("Years passed expectancy: " + "<strong><em>" + solarYears.yearsPassed[4] + " years</strong></em>");
     } else {
-      $("#mercuryLeft").html("Years left to live: " + "<strong>" + solarYears.yearsLeft[1] + " years" + "</strong>");
-      $("#venusLeft").html("Years left to live: " + "<strong>" + solarYears.yearsLeft[2] + " years" + "</strong>");
-      $("#marsLeft").html("Years left to live: " + "<strong>" + solarYears.yearsLeft[3] + " years" + "</strong>");
-      $("#jupiterLeft").html("Years left to live: " + "<strong>" + solarYears.yearsLeft[4] + " years" + "</strong>");
+      $("#earthLeft").text("You only have " + solarYears.yearsLeft[0] + " years left to live");
+      $("#mercuryLeft").html("Years left to live: " + "<strong><em>" + solarYears.yearsLeft[1] + " years</strong></em>");
+      $("#venusLeft").html("Years left to live: " + "<strong><em>" + solarYears.yearsLeft[2] + " years</strong></em>");
+      $("#marsLeft").html("Years left to live: " + "<strong><em>" + solarYears.yearsLeft[3] + " years</strong></em>");
+      $("#jupiterLeft").html("Years left to live: " + "<strong><em>" + solarYears.yearsLeft[4] + " years</strong></em>");
     }
   });
 });
