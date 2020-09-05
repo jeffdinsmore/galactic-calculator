@@ -85,4 +85,9 @@ describe('SolarYears', () => {
     solarYears.lifeExpectancy();
     expect(solarYears.venusLife <= 156 && solarYears.venusLife >= 116).toBe(true);
   });
+
+  test('should correctly return life expectancy by adding Venus age plus mercury years left', () => {
+    solarYears.lifeExpectancy();
+    expect(solarYears.marsLife <= 52 && solarYears.marsLife >= 38).toBe(true);
+  });
 });
