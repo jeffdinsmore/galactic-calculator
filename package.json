@@ -9,6 +9,10 @@
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["html"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeffdinsmore/galactic-calculator.git"
