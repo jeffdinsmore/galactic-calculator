@@ -10,19 +10,23 @@ export default class SolarYears {
     this.jupiterAge = Math.floor(10 * this.age / 11.86)/10;
   }
   
-  randomNumber () {
+  lifeExpectancy() {
     let random = (Math.random() * 25) + 72;
     this.randomAge = Math.floor(10 * random)/10;
+    this.mercuryLife = Math.floor(10* this.randomAge / 0.24)/10;
+    this.venusLife = Math.floor(10 * this.randomAge / 0.62)/10;
+    this.marsLife = Math.floor(10 * this.randomAge / 1.88)/10
+    this.jupiterLife = Math.floor(10 * this.randomAge / 11.86)/10;
   }
 
   solarYearsLeft () { 
     this.yearsLeft = [];
     this.yearsLeft.push(this.randomAge - this.age);
     this.earthLeft = this.yearsLeft[0];
-    this.yearsLeft.push(this.earthLeft/0.24);
-    this.yearsLeft.push(this.earthLeft/0.62);
-    this.yearsLeft.push(this.earthLeft/1.88);
-    this.yearsLeft.push(this.earthLeft/11.86);
+    this.yearsLeft.push(this.mercuryLife - this.mercuryAge);
+    this.yearsLeft.push(this.venusLife - this.venusAge);
+    this.yearsLeft.push(this.marsLife - this.marsAge);
+    this.yearsLeft.push(this.jupiterLife - this.jupiterAge);
     this.yearsLeft = this.yearsLeft.map(function(element) {
       return Number(element.toFixed(1));
     });
@@ -32,21 +36,15 @@ export default class SolarYears {
     this.yearsPassed = [];
     this.yearsPassed.push(this.age - this.randomAge);
     this.earthPassed = this.yearsPassed[0];
-    this.yearsPassed.push(this.earthPassed/0.24);
-    this.yearsPassed.push(this.earthPassed/0.62);
-    this.yearsPassed.push(this.earthPassed/1.88);
-    this.yearsPassed.push(this.earthPassed/11.86);
+    this.yearsPassed.push(this.mercuryAge - this.mercuryLife);
+    this.yearsPassed.push(this.venusAge - this.venusLife);
+    this.yearsPassed.push(this.marsAge - this.marsLife);
+    this.yearsPassed.push(this.jupiterAge - this.jupiterLife);
     this.yearsPassed = this.yearsPassed.map(function(element) {
       return Number(element.toFixed(1));
     });
   } 
 
-  lifeExpectancy() {
-    this.mercuryLife = (this.mercuryAge + this.yearsLeft[1]).toFixed(1);
-    this.venusLife = (this.venusAge + this.yearsLeft[2]).toFixed(1);
-    this.marsLife = (this.marsAge + this.yearsLeft[3]).toFixed(1);
-    this.jupiterLife = (this.jupiterAge + this.yearsLeft[4]).toFixed(1);
-  }
 }
 
 

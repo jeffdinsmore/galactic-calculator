@@ -2,6 +2,7 @@ import SolarYears from './../src/js/solarYear.js';
 
 describe('SolarYears', () => {
   let solarYears = new SolarYears(53);
+  solarYears.lifeExpectancy();
 
   test('should correctly return the solar years of mercury at 0.24 Earth Years', () => {
     solarYears.solarYearEquation();
@@ -24,7 +25,7 @@ describe('SolarYears', () => {
   });
 
   test('should correctly return a random age between 72 and 97', () => {
-    solarYears.randomNumber();
+    solarYears.lifeExpectancy();
     expect(solarYears.randomAge <= 97 && solarYears.randomAge >= 72).toBe(true);
   });
 
@@ -56,7 +57,7 @@ describe('SolarYears', () => {
 
   describe('SolarYears', () => {
   let solarYears = new SolarYears(98);
-  solarYears.randomNumber();
+  solarYears.lifeExpectancy();
   solarYears.solarYearEquation();
   solarYears.solarYearsLeft();
 

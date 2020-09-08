@@ -18,11 +18,10 @@ $(document).ready(function() {
       $("#mars").text(solarYears.marsAge + " years");
       $("#jupiter").text(solarYears.jupiterAge + " years");
       
-      solarYears.randomNumber();
+      solarYears.lifeExpectancy();
       $("#outputYear").html("Your life expectancy is..." + "<br><em><strong>" + solarYears.randomAge + " Earth years</em></strong");
       
       solarYears.solarYearsLeft();
-      solarYears.lifeExpectancy();
       $("#mercuryLife").text(solarYears.mercuryLife + " years");
       $("#venusLife").text(solarYears.venusLife + " years");
       $("#marsLife").text(solarYears.marsLife + " years");
