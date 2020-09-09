@@ -63,27 +63,27 @@ describe('SolarYears', () => {
 
   test('should correctly return age 98 minus the random age for Earth', () => {
     solarYears.solarYearsPassed();
-    expect(solarYears.yearsPassed[0] <= 26 && solarYears.yearsPassed[0] >= 1).toBe(true);
+    expect(solarYears.earthPassed <= 26 && solarYears.earthPassed >= 1).toBe(true);
   });
 
   test('should correctly return age 98 minus the random age divided by 0.24 for Mercury', () => {
     solarYears.solarYearsPassed();
-    expect(solarYears.yearsPassed[1] <= ((98-72)/.24) && solarYears.yearsPassed[1] >= ((98-97)/.24)).toBe(true);
+    expect(solarYears.mercuryPassed <= ((98-72)/.24) && solarYears.mercuryPassed >= ((98-97)/.24)).toBe(true);
   });
 
   test('should correctly return age 98 minus the random age divided by 0.62 for Venus', () => {
     solarYears.solarYearsPassed();
-    expect(solarYears.yearsPassed[2] <= ((98-72)/.62) && solarYears.yearsPassed[2] >= ((98-97)/.62)).toBe(true);
+    expect(solarYears.venusPassed <= ((98-72)/.62) && solarYears.venusPassed >= ((98-97)/.62)).toBe(true);
   });
 
   test('should correctly return age 98 minus the random age divided by 1.88 for Mars', () => {
     solarYears.solarYearsPassed();
-    expect(solarYears.yearsPassed[3] <= ((98-72)/1.88) && solarYears.yearsPassed[3] >= ((98-97)/1.88)).toBe(true);
+    expect(solarYears.marsPassed <= ((98-72)/1.88) && solarYears.marsPassed >= ((98-97)/1.88)).toBe(true);
   });
 
   test('should correctly return age 98 minus the random age divided by 11.86 for Jupiter', () => {
     solarYears.solarYearsPassed();
-    expect(solarYears.yearsPassed[4] <= ((98-72)/11.86) && solarYears.yearsPassed[4] >= ((98-97)/11.86)).toBe(true);
+    expect(solarYears.jupiterPassed <= ((98-72)/11.86) && solarYears.jupiterPassed >= ((98-97)/11.86)).toBe(true);
   });
 
   test('should correctly return life expectancy by adding Mercury age plus Mercury years left', () => {

@@ -28,16 +28,11 @@ export default class SolarYears {
   } 
 
   solarYearsPassed () { 
-    this.yearsPassed = [];
-    this.yearsPassed.push(this.age - this.randomAge);
-    this.earthPassed = this.yearsPassed[0];
-    this.yearsPassed.push(this.mercuryAge - this.mercuryLife);
-    this.yearsPassed.push(this.venusAge - this.venusLife);
-    this.yearsPassed.push(this.marsAge - this.marsLife);
-    this.yearsPassed.push(this.jupiterAge - this.jupiterLife);
-    this.yearsPassed = this.yearsPassed.map(function(element) {
-      return Number(element.toFixed(1));
-    });
+    this.earthPassed = Math.floor(10 * (this.age - this.randomAge))/10;
+    this.mercuryPassed = Math.floor(10 * (this.mercuryAge - this.mercuryLife))/10;
+    this.venusPassed = Math.floor(10 * (this.venusAge - this.venusLife))/10;
+    this.marsPassed = Math.floor(10 * (this.marsAge - this.marsLife))/10;
+    this.jupiterPassed = Math.floor(10 * (this.jupiterAge - this.jupiterLife))/10;
   } 
 
 }
