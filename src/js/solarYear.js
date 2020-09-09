@@ -20,16 +20,11 @@ export default class SolarYears {
   }
 
   solarYearsLeft () { 
-    this.yearsLeft = [];
-    this.yearsLeft.push(this.randomAge - this.age);
-    this.earthLeft = this.yearsLeft[0];
-    this.yearsLeft.push(this.mercuryLife - this.mercuryAge);
-    this.yearsLeft.push(this.venusLife - this.venusAge);
-    this.yearsLeft.push(this.marsLife - this.marsAge);
-    this.yearsLeft.push(this.jupiterLife - this.jupiterAge);
-    this.yearsLeft = this.yearsLeft.map(function(element) {
-      return Number(element.toFixed(1));
-    });
+    this.earthLeft = Math.floor(10 * (this.randomAge - this.age))/10;
+    this.mercuryLeft = Math.floor(10 * (this.mercuryLife - this.mercuryAge))/10;
+    this.venusLeft = Math.floor(10 * (this.venusLife - this.venusAge))/10;
+    this.marsLeft = Math.floor(10 * (this.marsLife - this.marsAge))/10;
+    this.jupiterLeft = Math.floor(10 * (this.jupiterLife - this.jupiterAge))/10;
   } 
 
   solarYearsPassed () { 

@@ -31,27 +31,27 @@ describe('SolarYears', () => {
 
   test('should correctly return the random age between 72 and 97 minus the age 53', () => {
     solarYears.solarYearsLeft();
-    expect(solarYears.yearsLeft[0] <= 44 && solarYears.yearsLeft[0] >= 19).toBe(true);
+    expect(solarYears.earthLeft <= 44 && solarYears.earthLeft >= 19).toBe(true);
   });
 
   test('should correctly return the random age between 72 and 97 minus the age 53 and then divide by 0.24', () => {
     solarYears.solarYearsLeft();
-    expect(solarYears.yearsLeft[1] <= ((97-53)/.24) && solarYears.yearsLeft[1] >= ((72-53)/.24)).toBe(true);
+    expect(solarYears.mercuryLeft <= ((97-53)/.24) && solarYears.mercuryLeft >= ((72-53)/.24)).toBe(true);
   });
 
   test('should correctly return the random age between 72 and 97 minus the age 53 and then divide by 0.62', () => {
     solarYears.solarYearsLeft();
-    expect(solarYears.yearsLeft[2] <= ((97-53)/.62) && solarYears.yearsLeft[2] >= ((72-53)/.62)).toBe(true);
+    expect(solarYears.venusLeft <= ((97-53)/.62) && solarYears.venusLeft >= ((72-53)/.62)).toBe(true);
   });
 
   test('should correctly return the random age between 72 and 97 minus the age 53 and then divide by 1.88', () => {
     solarYears.solarYearsLeft();
-    expect(solarYears.yearsLeft[3] <= ((97-53)/1.88) && solarYears.yearsLeft[3] >= ((72-53)/1.88)).toBe(true);
+    expect(solarYears.marsLeft <= ((97-53)/1.88) && solarYears.marsLeft >= ((72-53)/1.88)).toBe(true);
   });
   
   test('should correctly return the random age between 72 and 97 minus the age 53 and then divide by 11.86', () => {
     solarYears.solarYearsLeft();
-    expect(solarYears.yearsLeft[4] <= ((97-53)/11.86) && solarYears.yearsLeft[4] >= ((72-53)/11.86)).toBe(true);
+    expect(solarYears.jupiterLeft <= ((97-53)/11.86) && solarYears.jupiterLeft >= ((72-53)/11.86)).toBe(true);
   });
 });
 
