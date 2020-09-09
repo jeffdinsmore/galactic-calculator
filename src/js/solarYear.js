@@ -12,15 +12,15 @@ export default class SolarYears {
   
   lifeExpectancy() {
     let random = (Math.random() * 25) + 72;
-    this.randomAge = Math.floor(10 * random)/10;
-    this.mercuryLife = Math.floor(10* this.randomAge / 0.24)/10;
-    this.venusLife = Math.floor(10 * this.randomAge / 0.62)/10;
-    this.marsLife = Math.floor(10 * this.randomAge / 1.88)/10
-    this.jupiterLife = Math.floor(10 * this.randomAge / 11.86)/10;
+    this.earthLife = Math.floor(10 * random)/10;
+    this.mercuryLife = Math.floor(10 * this.earthLife / 0.24)/10;
+    this.venusLife = Math.floor(10 * this.earthLife / 0.62)/10;
+    this.marsLife = Math.floor(10 * this.earthLife / 1.88)/10
+    this.jupiterLife = Math.floor(10 * this.earthLife / 11.86)/10;
   }
 
   solarYearsLeft () { 
-    this.earthLeft = Math.floor(10 * (this.randomAge - this.age))/10;
+    this.earthLeft = (this.earthLife - this.age).toFixed(1);
     this.mercuryLeft = Math.floor(10 * (this.mercuryLife - this.mercuryAge))/10;
     this.venusLeft = Math.floor(10 * (this.venusLife - this.venusAge))/10;
     this.marsLeft = Math.floor(10 * (this.marsLife - this.marsAge))/10;
@@ -28,7 +28,7 @@ export default class SolarYears {
   } 
 
   solarYearsPassed () { 
-    this.earthPassed = Math.floor(10 * (this.age - this.randomAge))/10;
+    this.earthPassed = (this.age - this.earthLife).toFixed(1);
     this.mercuryPassed = Math.floor(10 * (this.mercuryAge - this.mercuryLife))/10;
     this.venusPassed = Math.floor(10 * (this.venusAge - this.venusLife))/10;
     this.marsPassed = Math.floor(10 * (this.marsAge - this.marsLife))/10;

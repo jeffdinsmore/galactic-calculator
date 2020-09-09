@@ -19,7 +19,7 @@ $(document).ready(function() {
       $("#jupiter").text(solarYears.jupiterAge + " years");
       
       solarYears.lifeExpectancy();
-      $("#outputYear").html("Your life expectancy is..." + "<br><em><strong>" + solarYears.randomAge + " Earth years</em></strong");
+      $("#outputYear").html("Your life expectancy is..." + "<br><em><strong>" + solarYears.earthLife + " Earth years</em></strong");
       
       solarYears.solarYearsLeft();
       $("#mercuryLife").text(solarYears.mercuryLife + " years");
@@ -28,8 +28,8 @@ $(document).ready(function() {
       $("#jupiterLife").text(solarYears.jupiterLife + " years");
       
       solarYears.solarYearsPassed();
-      if (inputtedAge > solarYears.randomAge) {
-        $("#outputYear").html("Your life expectancy was..." + "<br><strong><em>" + solarYears.randomAge + " Earth years</em></strong>");
+      if (inputtedAge > solarYears.earthLife) {
+        $("#outputYear").html("Your life expectancy was..." + "<br><strong><em>" + solarYears.earthLife + " Earth years</em></strong>");
         $("#earthLeft").text("You have outlived most people by " + solarYears.earthPassed + " years");
         $("#mercuryLeft").html("Years passed expectancy: " + "<strong><em>" + solarYears.mercuryPassed + " years</strong></em>");
         $("#venusLeft").html("Years passed expectancy: " + "<strong><em>" + solarYears.venusPassed + " years</strong></em>");

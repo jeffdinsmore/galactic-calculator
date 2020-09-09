@@ -26,7 +26,7 @@ describe('SolarYears', () => {
 
   test('should correctly return a random age between 72 and 97', () => {
     solarYears.lifeExpectancy();
-    expect(solarYears.randomAge <= 97 && solarYears.randomAge >= 72).toBe(true);
+    expect(solarYears.earthLife <= 97 && solarYears.earthLife >= 72).toBe(true);
   });
 
   test('should correctly return the random age between 72 and 97 minus the age 53', () => {
@@ -92,17 +92,17 @@ describe('SolarYears', () => {
     expect(solarYears.mercuryLife <= (97/.24) && solarYears.mercuryLife >= (72/.24)).toBe(true);
   });
 
-  test('should correctly return life expectancy by adding Venus age plus mercury years left', () => {
+  test('should correctly return life expectancy by adding Venus age plus Venus years left', () => {
     solarYears.lifeExpectancy();
     expect(solarYears.venusLife <= (97/.62) && solarYears.venusLife >= (72/.62)).toBe(true);
   });
 
-  test('should correctly return life expectancy by adding Mars age plus mercury years left', () => {
+  test('should correctly return life expectancy by adding Mars age plus Mars years left', () => {
     solarYears.lifeExpectancy();
     expect(solarYears.marsLife <= (97/1.88) && solarYears.marsLife >= (72/1.88)).toBe(true);
   });
 
-  test('should correctly return life expectancy by adding Jupiter age plus mercury years left', () => {
+  test('should correctly return life expectancy by adding Jupiter age plus Jupiter years left', () => {
     solarYears.lifeExpectancy();
     expect(solarYears.jupiterLife <= (97/11.86) && solarYears.jupiterLife >= (72/11.86)).toBe(true);
   });
